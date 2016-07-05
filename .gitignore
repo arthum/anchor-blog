@@ -44,6 +44,7 @@ vendor/
 
 ### added by AL
 anchor/
+!anchor/views/posts/
 composer.lock
 content/
 system/
