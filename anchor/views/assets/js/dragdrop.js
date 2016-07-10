@@ -146,7 +146,7 @@ $(function() {
 				fileOutput = '[' + file.name + '](' + data.uri + ')' + "\n\n";
 
 			if(['image/jpeg', 'image/gif', 'image/png', 'image/bmp'].indexOf(file.type) !== -1) {
-				fileOutput = "\n\n!" + fileOutput;
+				fileOutput = "\n\n[![Caption](" + file.name + ")](../content/" + file.name + ")";
 			} else {
 				fileOutput = "\n\n" + fileOutput;
 			}
