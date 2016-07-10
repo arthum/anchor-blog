@@ -44,7 +44,8 @@ anchor/*
 !anchor/views/
 anchor/views/*
 !anchor/views/posts/
-anchor/views/assets/css/
+!anchor/views/assets/
+anchor/views/assets/*
 !anchor/views/assets/css/admin.css
 composer.lock
 system/
