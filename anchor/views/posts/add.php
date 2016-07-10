@@ -38,6 +38,14 @@
 		</div>
 	</fieldset>
 
+	<div class="wrap">
+		<hr>
+		<p>To have an image with a caption and have them link to the image itself:</p>
+		<code>[![My caption](file-name.jpg)](../content/file-name.jpg)</code>
+		<p>To have an image with a caption:</p>
+		<code>![My caption](file-name.jpg)</code>
+	</div>
+
 	<fieldset class="meta split">
 		<div class="wrap">
 			<p>
