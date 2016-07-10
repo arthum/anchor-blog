@@ -44,6 +44,8 @@
 		<code>[![My caption](file-name.jpg)](../content/file-name.jpg)</code>
 		<p>To have an image with a caption:</p>
 		<code>![My caption](file-name.jpg)</code>
+		<p><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown cheat sheet</a></p>
+		<p>&nbsp;</p>
 	</div>
 
 	<fieldset class="meta split">
