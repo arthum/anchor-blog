@@ -39,8 +39,12 @@ humans.txt
 vendor/
 
 ### added by AL
+!anchor/
 anchor/*
-!anchor/views/posts/*
+!anchor/views/
+anchor/views/*
+!anchor/views/posts/
+
 composer.lock
 system/
 
