@@ -18,7 +18,6 @@ Thumbs.db
 
 # debug and custom themes
 /themes/*
-!/themes/default
 
 # uploaded content
 /content/*
@@ -26,9 +25,6 @@ Thumbs.db
 
 # plugins
 /plugins/*
-
-# phpunit tests
-/tests
 
 # We all love Sublime Text and its awesome plugins, don't we?
 sftp-config.json
@@ -43,12 +39,10 @@ humans.txt
 vendor/
 
 ### added by AL
-anchor/
-!anchor/views/posts/
+anchor/*
+!anchor/views/posts/*
 composer.lock
-content/
 system/
-themes/default/
 
 # allow these themes:
 !themes/bushwick-master/
