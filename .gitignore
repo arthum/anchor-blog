@@ -47,6 +47,9 @@ anchor/views/*
 !anchor/views/assets/
 anchor/views/assets/*
 !anchor/views/assets/css/admin.css
+!anchor/views/assets/js/
+anchor/views/assets/js/*
+!anchor/views/assets/js/dragdrop.js
 composer.lock
 system/
 
