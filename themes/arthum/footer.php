@@ -11,7 +11,11 @@
 			                    <li><a href="https://twitter.com/arthum" target="_blank">@arthum</a></li>
 			                    <?php endif; ?>
 
-			                    <li><a href="<?php echo base_url('admin'); ?>" title="Administer your site!">Admin area</a></li>
+			                    <?php
+														/*
+														<li><a href="<?php echo base_url('admin'); ?>" title="Administer your site!">Admin area</a></li>
+														*/
+													?>
 			                </ul>
 			            </small>
 	        		</div>
