@@ -21,13 +21,17 @@ $(function() {
 	};
 
 	var open = function(event) {
-		event.preventDefault();
+		if (event) {
+			event.preventDefault();
+		}
 		body.addClass('draggy');
 		return false;
 	};
 
 	var close = function(event) {
-		event.preventDefault();
+		if (event) {
+			event.preventDefault();
+		}
 		body.removeClass('draggy');
 		return false;
 	};
@@ -154,6 +158,8 @@ $(function() {
 			element.value = value.substring(0, start) + fileOutput + value.substring(start);
 			element.selectionStart = element.selectionEnd = start + file.length;
 			textarea.trigger('keydown');
+
+			close();
 		}
 	};
 
@@ -167,4 +173,25 @@ $(function() {
 		body.append('<div id="upload-file"><span>Upload your file</span></div>');
 		body.append('<div id="upload-file-progress"><progress value="0"></progress></div>');
 	}
+
+	$('#js-file-upload-button').on('click', function() {
+		open();
+		var $input = $('#js-file-upload-input');
+		var files = $input.get(0).files;
+
+		if(files.length) {
+			for(var i = 0; i < files.length; i++) {
+				var file = files.item(i);
+
+				if(allowed.indexOf(file.type) !== -1) {
+					transfer(file);
+				}
+				else {
+					debug(file.type + ' not supported');
+				}
+			}
+			// clear the input
+			$input.val('');
+		}
+	});
 });

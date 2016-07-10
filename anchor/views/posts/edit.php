@@ -43,6 +43,11 @@
 		<div class="wrap">
 			<p>&nbsp;</p>
 			<hr>
+			<div>
+				<p>Upload a file</p>
+				<input type="file" id="js-file-upload-input" multiple>
+				<button class="btn" type="button" id="js-file-upload-button">upload</button>
+			</div>
 			<p>To have an image with a caption and have them link to the image itself:</p>
 			<code>[![My caption](file-name.jpg)](../content/file-name.jpg)</code>
 			<p>To have an image with a caption:</p>
